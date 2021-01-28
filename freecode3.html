@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @media (max-width: 200px) {
+        #header {
+          font-size: 100px;
+        }
+      }
+      #nav-bar {
+        background-color: black;
+        color:white;
+        border: burlywood 3px solid;
+        font-weight: bolder;
+      }
+      ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      #submit:hover {
+        background-color: crimson;
+        color: darkblue;
+      }
+      body {
+        text-align: center;
+        background-color: lightblue;
+  
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#header-img" class="nav-link">CARS</a> </li>
+          <li><a href="#para" class="nav-link">INFORMATION</a> </li>
+          <li> <a href="#form" class="nav-link">FORM</a></li>
+        </ul>
+      </nav>
+      <br />
+      <br />
+      <img id="header-img" src="CL.jpg" />
+      <br />
+      <br />
+      <p id="para">
+        Bayerische Motoren Werke AG, commonly referred to as BMW , is a German
+        multinational company which produces luxury vehicles and motorcycles.
+        The company was founded in 1916 as a manufacturer of aircraft engines,
+        which it produced from 1917 until 1918 and again from 1933 to 1945.BMW
+        is headquartered in Munich and produces motor vehicles in Germany,
+        Brazil, China, India, South Africa, the United Kingdom, the United
+        States and Mexico. The Quandt family is a long-term shareholder of the
+        company (with the remaining shares owned by public float), following
+        brothers Herbert and Harald Quandt's investments in 1959 which saved the
+        company from bankruptcy.The BMW M division released its first road car,
+        a mid-engine supercar, in 1978. This was followed by the BMW M5 in 1984
+        and the BMW M3 in 1986. Also in 1986, BMW introduced its first V12
+        engine in the 750i luxury sedan.
+      </p>
+      <embed
+        id="video"
+        src="https://www.youtube.com/embed/vQXvyV0zIP4"
+       style="width: 720px;height: 450px;"
+      ></embed>
+    </header>
+    <br />
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      EMAIL:
+      <input type="email" id="email" placeholder="Enter the Email" required />
+      <br />
+      <br />
+      <br />
+      SUBMIT:<input type="submit" id="submit" />
+    </form>
+  </body>
+</html>
